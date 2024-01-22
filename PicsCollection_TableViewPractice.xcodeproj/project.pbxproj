@@ -13,6 +13,8 @@
 		67A69E9D2B4B47D40068D343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A69E9B2B4B47D40068D343 /* Main.storyboard */; };
 		67A69E9F2B4B47D80068D343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A69E9E2B4B47D80068D343 /* Assets.xcassets */; };
 		67A69EA22B4B47D80068D343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A69EA02B4B47D80068D343 /* LaunchScreen.storyboard */; };
+		67A69EAB2B4B49030068D343 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A69EA92B4B49030068D343 /* MyTableViewCell.swift */; };
+		67A69EAC2B4B49030068D343 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A69EAA2B4B49030068D343 /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		67A69E9E2B4B47D80068D343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67A69EA12B4B47D80068D343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67A69EA32B4B47D80068D343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67A69EA92B4B49030068D343 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		67A69EAA2B4B49030068D343 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		67A69E942B4B47D40068D343 /* PicsCollection_TableViewPractice */ = {
 			isa = PBXGroup;
 			children = (
-				67A69E952B4B47D40068D343 /* AppDelegate.swift */,
-				67A69E972B4B47D40068D343 /* SceneDelegate.swift */,
-				67A69E992B4B47D40068D343 /* ViewController.swift */,
-				67A69E9B2B4B47D40068D343 /* Main.storyboard */,
-				67A69E9E2B4B47D80068D343 /* Assets.xcassets */,
+				67C5A0962B5C93880033DEA6 /* ViewControllers */,
+				67C5A0972B5C93980033DEA6 /* Storyboards */,
+				67C5A0982B5C93AE0033DEA6 /* CellConfiguration */,
+				67C5A0952B5C936A0033DEA6 /* Resources */,
+				67C5A0942B5C93590033DEA6 /* App */,
 				67A69EA02B4B47D80068D343 /* LaunchScreen.storyboard */,
 				67A69EA32B4B47D80068D343 /* Info.plist */,
 			);
 			path = PicsCollection_TableViewPractice;
+			sourceTree = "<group>";
+		};
+		67C5A0942B5C93590033DEA6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				67A69E952B4B47D40068D343 /* AppDelegate.swift */,
+				67A69E972B4B47D40068D343 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		67C5A0952B5C936A0033DEA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67A69E9E2B4B47D80068D343 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		67C5A0962B5C93880033DEA6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				67A69E992B4B47D40068D343 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		67C5A0972B5C93980033DEA6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				67A69E9B2B4B47D40068D343 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		67C5A0982B5C93AE0033DEA6 /* CellConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				67A69EA92B4B49030068D343 /* MyTableViewCell.swift */,
+				67A69EAA2B4B49030068D343 /* MyTableViewCell.xib */,
+			);
+			path = CellConfiguration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A69EA22B4B47D80068D343 /* LaunchScreen.storyboard in Resources */,
+				67A69EAC2B4B49030068D343 /* MyTableViewCell.xib in Resources */,
 				67A69E9F2B4B47D80068D343 /* Assets.xcassets in Resources */,
 				67A69E9D2B4B47D40068D343 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A69E9A2B4B47D40068D343 /* ViewController.swift in Sources */,
+				67A69EAB2B4B49030068D343 /* MyTableViewCell.swift in Sources */,
 				67A69E962B4B47D40068D343 /* AppDelegate.swift in Sources */,
 				67A69E982B4B47D40068D343 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,8 +345,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +355,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Pecherskaya.PicsCollection-TableViewPractice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,8 +376,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +386,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Pecherskaya.PicsCollection-TableViewPractice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
